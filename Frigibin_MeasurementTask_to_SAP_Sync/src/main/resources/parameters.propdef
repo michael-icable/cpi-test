@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><parameters><parameter>
+    <key/>
+    <name>DEV Location ID</name>
+    <type>xsd:string</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Cloud Connector location ID of the target</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>DEV Schedule</name>
+    <type>custom:schedule</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Timer of the DEV target</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>DEV Sync Enabled</name>
+    <type>xsd:boolean</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>false = the DEV run ends immediately (pause)</description>
+    <additionalMetadata>
+      <isCombobox>false</isCombobox>
+    </additionalMetadata>
+  </parameter><parameter>
+    <key/>
+    <name>DEV Target Host</name>
+    <type>xsd:string</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Virtual host = credential alias = Data Store entry ID</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>Data Store Expiration Days</name>
+    <type>xsd:integer</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Expiration of a watermark entry in days</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>Data Store Name</name>
+    <type>xsd:string</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Data Store of the watermarks</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>Error Handler Address</name>
+    <type>xsd:string</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>ProcessDirect address of the central error handler</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>Full Load Page Size</name>
+    <type>xsd:integer</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Rows per full-load page (= per applyChanges call)</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>JDBC Data Source Alias</name>
+    <type>xsd:string</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>JDBC material of the MSSQL database</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>JDBC Query Timeout</name>
+    <type>xsd:integer</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Query timeout in seconds</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>PRD Location ID</name>
+    <type>xsd:string</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Cloud Connector location ID of the target</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>PRD Schedule</name>
+    <type>custom:schedule</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Timer of the PRD target</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>PRD Sync Enabled</name>
+    <type>xsd:boolean</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>false = the PRD run ends immediately (pause)</description>
+    <additionalMetadata>
+      <isCombobox>false</isCombobox>
+    </additionalMetadata>
+  </parameter><parameter>
+    <key/>
+    <name>PRD Target Host</name>
+    <type>xsd:string</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Virtual host = credential alias = Data Store entry ID</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>Package Size</name>
+    <type>xsd:integer</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Maximum changes per applyChanges call</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>Payload Logging</name>
+    <type>xsd:boolean</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>true = payloads are attached to the MPL</description>
+    <additionalMetadata>
+      <isCombobox>false</isCombobox>
+    </additionalMetadata>
+  </parameter><parameter>
+    <key/>
+    <name>QAS Location ID</name>
+    <type>xsd:string</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Cloud Connector location ID of the target</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>QAS Schedule</name>
+    <type>custom:schedule</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Timer of the QAS target</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>QAS Sync Enabled</name>
+    <type>xsd:boolean</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>false = the QAS run ends immediately (pause)</description>
+    <additionalMetadata>
+      <isCombobox>false</isCombobox>
+    </additionalMetadata>
+  </parameter><parameter>
+    <key/>
+    <name>QAS Target Host</name>
+    <type>xsd:string</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Virtual host = credential alias = Data Store entry ID</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>S4 Action Namespace</name>
+    <type>xsd:string</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Namespace of the bound actions (see $metadata)</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>S4 Client</name>
+    <type>xsd:string</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>SAP client</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>S4 Entity Set</name>
+    <type>xsd:string</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Entity set bound to the static actions</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>S4 Port</name>
+    <type>xsd:string</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Port of the virtual host (protocol http, the Cloud Connector uses TLS)</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>S4 Request Timeout</name>
+    <type>xsd:integer</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>HTTP request timeout in ms</description>
+    <additionalMetadata/>
+  </parameter><parameter>
+    <key/>
+    <name>S4 Service Path</name>
+    <type>xsd:string</type>
+    <isRequired>true</isRequired>
+    <constraint/>
+    <description>Root path of the OData V4 service</description>
+    <additionalMetadata/>
+  </parameter><param_references><reference attribute_category="S4HANA_Token" attribute_id="ctype::AdapterVariant/cname::HTTP/tp::HTTP/mp::None/direction::Receiver/version::1.19.4/attrId::httpRequestTimeout" attribute_uilabel="Timeout (in ms)" param_key="S4 Request Timeout"/><reference attribute_category="S4HANA_Delta" attribute_id="ctype::AdapterVariant/cname::HTTP/tp::HTTP/mp::None/direction::Receiver/version::1.19.4/attrId::httpRequestTimeout" attribute_uilabel="Timeout (in ms)" param_key="S4 Request Timeout"/><reference attribute_category="S4HANA_Page" attribute_id="ctype::AdapterVariant/cname::HTTP/tp::HTTP/mp::None/direction::Receiver/version::1.19.4/attrId::httpRequestTimeout" attribute_uilabel="Timeout (in ms)" param_key="S4 Request Timeout"/><reference attribute_category="MSSQL_Delta.Auth" attribute_id="ctype::Adapter/cname::JDBC/vendor::SAP/version::1.6.1/attrId::alias" attribute_uilabel="JDBC Data Source Alias" param_key="JDBC Data Source Alias"/><reference attribute_category="MSSQL_Delta" attribute_id="ctype::Adapter/cname::JDBC/vendor::SAP/version::1.6.1/attrId::connectionTimeout" attribute_uilabel="Connection Timeout (in s)" param_key="JDBC Query Timeout"/><reference attribute_category="MSSQL_Page.Auth" attribute_id="ctype::Adapter/cname::JDBC/vendor::SAP/version::1.6.1/attrId::alias" attribute_uilabel="JDBC Data Source Alias" param_key="JDBC Data Source Alias"/><reference attribute_category="MSSQL_Page" attribute_id="ctype::Adapter/cname::JDBC/vendor::SAP/version::1.6.1/attrId::connectionTimeout" attribute_uilabel="Connection Timeout (in s)" param_key="JDBC Query Timeout"/><reference attribute_category="IC_Common_ErrorHandler" attribute_id="ctype::Adapter/cname::ProcessDirect/vendor::SAP/version::1.1.2/attrId::address" attribute_uilabel="Address" param_key="Error Handler Address"/><reference attribute_category="S4HANA_Finalize" attribute_id="ctype::AdapterVariant/cname::HTTP/tp::HTTP/mp::None/direction::Receiver/version::1.19.4/attrId::httpRequestTimeout" attribute_uilabel="Timeout (in ms)" param_key="S4 Request Timeout"/></param_references></parameters>

@@ -1,0 +1,27 @@
+#Wed Sep 16 18:57:20 UTC 2026
+DEV\ Location\ ID=DCL
+DEV\ Schedule=<row><cell>dateType</cell><cell>DAILY</cell></row><row><cell>time</cell><cell>02\:00</cell></row><row><cell>timeZone</cell><cell>( UTC 1\:00 ) Central European Standard Time(Europe/Rome)</cell></row><row><cell>triggerType</cell><cell>cron</cell></row><row><cell>noOfSchedules</cell><cell>1</cell></row><row><cell>schedule1</cell><cell>0+0+2+?+*+*+*&amp;trigger.timeZone\=Europe/Rome</cell></row>
+DEV\ Sync\ Enabled=true
+DEV\ Target\ Host=sapdev.cloud.local
+Data\ Store\ Expiration\ Days=90
+Data\ Store\ Name=IC_MeasTaskSync_Watermark
+Error\ Handler\ Address=/ic/common/errorhandler
+Full\ Load\ Page\ Size=500
+JDBC\ Data\ Source\ Alias=Frigibin_MeasurementTasks
+JDBC\ Query\ Timeout=300
+PRD\ Location\ ID=PCL
+PRD\ Schedule=<row><cell>dateType</cell><cell>DAILY</cell></row><row><cell>OnEveryMinute</cell><cell>1h</cell></row><row><cell>fromInterval</cell><cell>0\:15</cell></row><row><cell>toInterval</cell><cell>23\:15</cell></row><row><cell>timeZone</cell><cell>( UTC 1\:00 ) Central European Standard Time(Europe/Rome)</cell></row><row><cell>triggerType</cell><cell>cron</cell></row><row><cell>noOfSchedules</cell><cell>1</cell></row><row><cell>schedule1</cell><cell>0+15+0/1+?+*+*+*&amp;trigger.timeZone\=Europe/Rome</cell></row>
+PRD\ Sync\ Enabled=true
+PRD\ Target\ Host=sapprd.cloud.local
+Package\ Size=500
+Payload\ Logging=false
+QAS\ Location\ ID=DCL
+QAS\ Schedule=<row><cell>dayValue</cell><cell></cell></row><row><cell>monthValue</cell><cell></cell></row><row><cell>yearValue</cell><cell></cell></row><row><cell>dateType</cell><cell>DAILY</cell></row><row><cell>secondValue</cell><cell>0</cell></row><row><cell>minutesValue</cell><cell></cell></row><row><cell>hourValue</cell><cell></cell></row><row><cell>toInterval</cell><cell>1</cell></row><row><cell>fromInterval</cell><cell>0</cell></row><row><cell>OnEveryMinute</cell><cell>0</cell></row><row><cell>timeType</cell><cell>TIME_INTERVAL</cell></row><row><cell>timeZone</cell><cell>( UTC 1\:00 ) Central European Standard Time(Europe/Rome)</cell></row><row><cell>throwExceptionOnExpiry</cell><cell>true</cell></row><row><cell>second</cell><cell>*</cell></row><row><cell>minute</cell><cell>*</cell></row><row><cell>hour</cell><cell>*</cell></row><row><cell>day_of_month</cell><cell>?</cell></row><row><cell>month</cell><cell>*</cell></row><row><cell>dayOfWeek</cell><cell>*</cell></row><row><cell>year</cell><cell>*</cell></row><row><cell>startAt</cell><cell></cell></row><row><cell>endAt</cell><cell></cell></row><row><cell>attributeBehaviour</cell><cell>isRunOnceRequired,isScheduleOnDayRequired,isScheduleRecurRequired</cell></row><row><cell>triggerType</cell><cell>cron</cell></row><row><cell>noOfSchedules</cell><cell>1</cell></row><row><cell>schedule1</cell><cell>0/1+*+0-0+?+*+*+*&amp;trigger.timeZone\=Europe/Rome</cell></row>
+QAS\ Sync\ Enabled=true
+QAS\ Target\ Host=sapqas.cloud.local
+S4\ Action\ Namespace=com.sap.gateway.srvd.zui_ic_measurementtask.v0001
+S4\ Client=600
+S4\ Entity\ Set=MeasurementTask
+S4\ Port=443
+S4\ Request\ Timeout=300000
+S4\ Service\ Path=/sap/opu/odata4/sap/zui_ic_measurementtask_o4/srvd/sap/zui_ic_measurementtask/0001

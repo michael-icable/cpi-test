@@ -1,0 +1,5 @@
+#Store metainfo properties
+#Wed Sep 16 19:24:45 UTC 2026
+description=Synchronizes dbo.MeasurementTask (MSSQL, Change Tracking) into the RAP business object ZR_IC_MeasurementTask on S/4HANA DEV, QAS and PRD. Interface Frigibin_Measurement_Tasks_to_SAP.
+source=MSSQL
+target=SAPS4HANA
